@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root id="borderPane" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" stylesheets="@../resources/ogly.css" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<bottom>
+  <GridPane alignment="TOP_LEFT" gridLinesVisible="false" hgap="5.0" vgap="5.0">
+    <children>
+      <Label minHeight="-1.0" minWidth="-1.0" text="Head radius:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+      <Label text="Eye radius:" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+      <Label text="Pupil radius:" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+      <Label text="Eye  spacing:" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+      <Label text="Eye height:" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+      <Slider fx:id="headRadiusSlider" max="300.0" min="100.0" value="100.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      <Slider fx:id="eyeRadiusSlider" min="10.0" value="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Slider fx:id="pupilRadiusSlider" max="50.0" min="5.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Slider fx:id="eyeSpacingSlider" max="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Slider fx:id="eyeHeightSlider" max="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+    </children>
+    <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" />
+      <ColumnConstraints hgrow="SOMETIMES" />
+      <ColumnConstraints hgrow="SOMETIMES" />
+      <ColumnConstraints hgrow="SOMETIMES" />
+      <ColumnConstraints hgrow="SOMETIMES" />
+    </columnConstraints>
+    <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+    <rowConstraints>
+      <RowConstraints vgrow="SOMETIMES" />
+      <RowConstraints vgrow="SOMETIMES" />
+    </rowConstraints>
+    <BorderPane.margin>
+      <Insets />
+    </BorderPane.margin>
+  </GridPane>
+</bottom>
+<center>
+  <AnchorPane fx:id="oglyPane" onMouseExited="#mouseExited" onMouseMoved="#mouseMoved" prefHeight="400.0" />
+</center>
+</fx:root>

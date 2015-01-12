@@ -1,0 +1,19 @@
+/*
+ * Stylesheet that configures Ogly's look.
+ */
+
+#head {
+    -fx-fill: lightgray;
+    -fx-stroke: lightslategray;
+    -fx-stroke-width: 2;
+}
+
+.eye {
+    -fx-fill: white;
+    -fx-stroke: darkgray;
+    -fx-stroke-width: 2;
+}
+
+.pupil {
+    -fx-fill: black;
+}
